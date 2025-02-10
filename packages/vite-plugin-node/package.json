@@ -1,9 +1,10 @@
 {
 	"name": "@jcannon98188/vite-plugin-node",
-	"version": "6.0.0",
+	"version": "6.0.2",
 	"description": "Vite plugin to enable your node server HMR, forked and maintained by jcannon98188",
 	"author": "Axe, Fork by Jason Cannon",
 	"license": "MIT",
+	"type": "module",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/jcannon98188/vite-plugin-node.git"
@@ -24,7 +25,7 @@
 		"prebuild": "rimraf dist && npm run lint && cp ../../README.md ./readme.md"
 	},
 	"dependencies": {
-		"@rollup/pluginutils": "^4.1.1",
+		"@rollup/pluginutils": "^5.1.4",
 		"chalk": "^4.1.2",
 		"debug": "^4.3.2"
 	},

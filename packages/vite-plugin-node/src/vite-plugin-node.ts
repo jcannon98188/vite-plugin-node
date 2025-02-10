@@ -1,9 +1,8 @@
 import type { Plugin, UserConfig } from "vite";
-import { PLUGIN_NAME } from ".";
-import type { VitePluginNodeConfig } from ".";
-import { RollupPluginSwc } from "./rollup-plugin-swc";
-import { createMiddleware } from "./server";
-import mergeDeep from "./utils";
+import { PLUGIN_NAME, type VitePluginNodeConfig } from "./index.js";
+import { RollupPluginSwc } from "./rollup-plugin-swc.js";
+import { createMiddleware } from "./server/index.js";
+import mergeDeep from "./utils.js";
 
 export function VitePluginNode(cfg: VitePluginNodeConfig): Plugin[] {
 	const swcOptions = mergeDeep(
@@ -30,10 +29,10 @@ export function VitePluginNode(cfg: VitePluginNodeConfig): Plugin[] {
 		appPath: cfg.appPath,
 		adapter: cfg.adapter,
 		appName: cfg.appName ?? "app",
-		tsCompiler: cfg.tsCompiler ?? "esbuild",
+		tsCompiler: cfg.tsCompiler ?? "swc",
 		exportName: cfg.exportName ?? "viteNodeApp",
 		initAppOnBoot: cfg.initAppOnBoot ?? false,
-		outputFormat: cfg.outputFormat ?? "cjs",
+		outputFormat: cfg.outputFormat ?? "module",
 		swcOptions,
 	};
 

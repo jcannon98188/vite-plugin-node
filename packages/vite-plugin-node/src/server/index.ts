@@ -13,14 +13,14 @@ import type {
 	RequestAdapterOption,
 	ViteConfig,
 	VitePluginNodeConfig,
-} from "..";
-import { PLUGIN_NAME } from "..";
-import { createDebugger } from "../utils";
-import { ExpressHandler } from "./express";
-import { FastifyHandler } from "./fastify";
-import { KoaHandler } from "./koa";
-import { MarbleHandler } from "./marble";
-import { NestHandler } from "./nest";
+} from "../index.js";
+import { PLUGIN_NAME } from "../index.js";
+import { createDebugger } from "../utils.js";
+import { ExpressHandler } from "./express.js";
+import { FastifyHandler } from "./fastify.js";
+import { KoaHandler } from "./koa.js";
+import { MarbleHandler } from "./marble.js";
+import { NestHandler } from "./nest.js";
 
 export const debugServer = createDebugger("vite:node-plugin:server");
 
