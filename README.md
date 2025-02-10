@@ -2,8 +2,8 @@
   <img src="./node-vite.png" width="200px">
 </p>
 <p align="center">
-  <a href="https://www.npmjs.com/package/vite-plugin-node"><img src="https://img.shields.io/npm/v/vite-plugin-node.svg" alt="npm package"></a>
-  <a href="https://nodejs.org/en/about/releases/"><img src="https://img.shields.io/node/v/vite-plugin-node.svg" alt="node compatibility"></a>
+  <a href="https://www.npmjs.com/package/@jcannon98188/vite-plugin-node"><img src="https://img.shields.io/npm/v/@jcannon98188/vite-plugin-node.svg" alt="npm package"></a>
+  <a href="https://nodejs.org/en/about/releases/"><img src="https://img.shields.io/node/v/@jcannon98188/vite-plugin-node.svg" alt="node compatibility"></a>
 </p>
 
 # Vite Plugin Node
@@ -25,14 +25,14 @@
 1. Install vite and this plugin with your favorite package manager, here use npm as example:
 
    ```bash
-   npm install vite vite-plugin-node -D
+   npm install vite @jcannon98188/vite-plugin-node -D
    ```
 
 2. Create a `vite.config.ts` file in your project root to config vite to actually use this plugin:
 
    ```ts
    import { defineConfig } from 'vite';
-   import { VitePluginNode } from 'vite-plugin-node';
+   import { VitePluginNode } from '@jcannon98188/vite-plugin-node';
 
    export default defineConfig({
      // ...vite configures
@@ -124,7 +124,7 @@ Example:
 
 ```ts
 import { defineConfig } from 'vite';
-import { VitePluginNode } from 'vite-plugin-node';
+import { VitePluginNode } from '@jcannon98188/vite-plugin-node';
 
 export default defineConfig({
   plugins: [

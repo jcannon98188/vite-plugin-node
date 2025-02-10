@@ -1,22 +1,22 @@
 {
-  "name": "apollo-example",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "vite",
-    "dev-flag": "NODE_OPTIONS='--experimental-fetch' vite",
-    "debug": "vite --debug --inspect-brk",
-    "build": "vite build"
-  },
-  "dependencies": {
-    "@apollo/server": "^4.3.0",
-    "cors": "^2.8.5",
-    "graphql": "^16.6.0"
-  },
-  "devDependencies": {
-    "@types/cors": "^2.8.13",
-    "vite": "^5.0.0",
-    "vite-plugin-node": "workspace:*"
-  }
+	"name": "apollo-example",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "vite",
+		"dev-flag": "NODE_OPTIONS='--experimental-fetch' vite",
+		"debug": "vite --debug --inspect-brk",
+		"build": "vite build"
+	},
+	"dependencies": {
+		"@apollo/server": "^4.3.0",
+		"cors": "^2.8.5",
+		"graphql": "^16.6.0"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.13",
+		"vite": "^6.0.0",
+		"@jcannon98188/vite-plugin-node": "^6.0.0"
+	}
 }

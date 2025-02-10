@@ -1,6 +1,10 @@
-import type { Application } from 'express';
-import type { RequestAdapter } from '..';
+import type { Application } from "express";
+import type { RequestAdapter } from "..";
 
-export const ExpressHandler: RequestAdapter<Application> = ({ app, req, res }) => {
-  app(req, res);
+export const ExpressHandler: RequestAdapter<Application> = ({
+	app,
+	req,
+	res,
+}) => {
+	app(req, res);
 };

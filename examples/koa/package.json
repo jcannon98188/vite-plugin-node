@@ -1,17 +1,17 @@
 {
-  "name": "koa-example",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  },
-  "dependencies": {
-    "koa": "^2.13.3"
-  },
-  "devDependencies": {
-    "vite": "^5.0.0",
-    "vite-plugin-node": "workspace:*"
-  }
+	"name": "koa-example",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	},
+	"dependencies": {
+		"koa": "^2.13.3"
+	},
+	"devDependencies": {
+		"vite": "^6.0.0",
+		"@jcannon98188/vite-plugin-node": "^6.0.0"
+	}
 }

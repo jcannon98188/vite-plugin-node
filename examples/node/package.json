@@ -1,15 +1,15 @@
 {
-  "name": "express-example",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "vite",
-    "debug": "vite --debug --inspect-brk",
-    "build": "vite build"
-  },
-  "devDependencies": {
-    "vite": "^5.0.0",
-    "vite-plugin-node": "workspace:*"
-  }
+	"name": "express-example",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "vite",
+		"debug": "vite --debug --inspect-brk",
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"vite": "^6.0.0",
+		"@jcannon98188/vite-plugin-node": "^6.0.0"
+	}
 }
